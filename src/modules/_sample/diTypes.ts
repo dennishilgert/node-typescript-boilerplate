@@ -1,11 +1,11 @@
 // public services accessible outside of module scope
 const PUBLIC_DI_TYPES = {
-  SampleService: Symbol.for('SampleService')
+  SampleService: Symbol('SampleService')
 }
 
 const DI_TYPES = {
   ...PUBLIC_DI_TYPES,
-  SampleRepo: Symbol.for('SampleRepo')
+  SampleRepo: Symbol('SampleRepo')
 }
 
 export { PUBLIC_DI_TYPES, DI_TYPES }
